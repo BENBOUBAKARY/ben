@@ -1,0 +1,54 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package binaire;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
+public class Binaire {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+         System.out.println("taper un nombre ");
+         
+        Scanner decimal = new Scanner (System.in);
+        
+        
+        int n = decimal.nextInt();
+     
+        int reponse;
+   
+        while (n != 0){
+            int calcul = n % 2;
+           
+       int reste = n % 2;
+       reponse = (n - reste)/2;
+    if(n > 0 ){
+            
+            System.out.println("reste est " +reste);
+            System.out.println("reponse est " + reponse);
+             }
+    else{
+                System.out.println(n+" ");
+          
+    }
+       n=n-1;     
+                
+            }
+    }
+}
+        
+       
+
+    
+
